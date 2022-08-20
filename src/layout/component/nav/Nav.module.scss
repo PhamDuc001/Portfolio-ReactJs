@@ -1,0 +1,68 @@
+.wrapper {
+    width: 20%;
+    background-color: #353553;
+    height: 1000px;
+    color: #FFF;
+    border-right: solid 1px rgba(255, 255, 255, 0.1);
+    background: #353353;
+    padding: 50px 40px 40px;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    min-height: 100vh;
+    top: 0;
+    display: flex;
+    float: left;
+    text-align: initial;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.logo-wrapper {}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    width: 100%;
+    margin-top: 130px;
+}
+
+.nav-item {
+    color: #FFF;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 100%;
+    text-decoration: none;
+    padding: 8px 0;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.active {
+    color: #FFD15C;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 18px;
+    color: #FFD15C;
+}
+
+.icon-active {}
+
+.title {
+    &:hover {
+        color: #FFD15C;
+    }
+}
+
+.footer {
+    font-size: 1.4rem;
+    color: #9C9AB3;
+    margin-top: 130px;
+    padding-bottom: 40px;
+}
