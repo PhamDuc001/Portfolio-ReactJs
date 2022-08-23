@@ -10,23 +10,31 @@ function Works() {
   const itemRef = useRef();
   const img1 = useRef();
   const titleItemRef = useRef();
+
+  const tabs = ["Everything", "Creative", "Art", "Design", "Branding"];
+
+  const handleActiveTab = (e) => {
+    e.target.classList.add("Works_active__vHq5F");
+  };
   const handleShowModal = () => {
     setIsDark(true);
   };
   const handleCloseModal = () => {
     setIsDark(false);
   };
-  console.log(titleItemRef.current);
+  // console.log(titleItemRef.current);
   return (
     <div className={cx("wrapper")}>
       <div className={cx("container")}>
         <h2 className={cx("header")}>Recent works</h2>
         <ul ref={titleItemRef} className={cx("title-list")}>
-          <li className={cx("title-item", { active: false })}>Everyting</li>
-          <li className={cx("title-item")}>Creative</li>
-          <li className={cx("title-item")}>Art</li>
-          <li className={cx("title-item")}>Design</li>
-          <li className={cx("title-item")}>Branding</li>
+          {tabs.map((tab) => (
+            <li
+              onClick={handleActiveTab}
+              className={cx("title-item", { active: isActive })}>
+              {tab}
+            </li>
+          ))}
         </ul>
         <div className={cx("content")}>
           {/* Modal */}

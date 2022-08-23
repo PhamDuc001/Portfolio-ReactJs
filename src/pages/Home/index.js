@@ -58,6 +58,9 @@ function Home() {
 
         <Button title="Hire me" to="/contact" />
         <span className={cx("scroll-text")}>Scroll Down</span>
+        <div className={cx("mouse-icon")}>
+          <div className={cx("mouse-dot")}>.</div>
+        </div>
       </div>
     </div>
   );

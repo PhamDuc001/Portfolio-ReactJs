@@ -1,0 +1,113 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: #fff;
+    height: 100vh;
+    padding: 80px 15px 0;
+}
+
+.header {
+    color: #454360;
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: start;
+    margin-left: 14px;
+    margin-bottom: 60px;
+}
+
+.row {
+    display: flex;
+}
+
+.col-1-4 {
+    width: 25%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: start;
+}
+
+.btn-down {
+    border-radius: 30px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 1;
+    padding: 12px 32px;
+}
+
+.col-3-4 {
+    width: 75%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+}
+
+.col-1-2 {
+    width: 50%;
+    color: #5e5c7f;
+    text-align: start;
+    line-height: 1.7;
+    padding: 0 15px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress1,
+.progress2,
+.progress3 {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 7px;
+        border-radius: 8px;
+    }
+}
+
+.progress1 {
+    background-color: #ffd15c;
+    width: 85%;
+}
+
+.progress2 {
+    background-color: #ff4c60;
+    width: 95%;
+}
+
+.progress3 {
+    background-color: #6c6ce5;
+    width: 70%;
+}
+
+.quanlity-item {
+    margin-top: 70px;
+    padding: 0 15px;
+    font-size: 30px;
+    color: #454360;
+    width: 25%;
+    p {
+        margin-bottom: -20px;
+    }
+    span {
+        font-size: 1.6rem;
+        color: #5e5c7f;
+    }
+}

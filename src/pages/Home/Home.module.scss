@@ -135,3 +135,38 @@
     font-size: 1.4rem;
     margin-top: 40px;
 }
+
+.mouse-icon {
+    width: 20px;
+    height: 26px;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    .mouse-dot {
+        font-weight: 900;
+        position: relative;
+        animation: scroll 1.3s infinite ease;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        top: 1px;
+    }
+    25% {
+        top: -2px;
+    }
+    50% {
+        top: -4px;
+    }
+    75% {
+        top: -6px;
+    }
+    100% {
+        top: -8px;
+    }
+}
