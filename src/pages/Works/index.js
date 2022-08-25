@@ -10,10 +10,16 @@ function Works() {
   const itemRef = useRef();
   const img1 = useRef();
   const titleItemRef = useRef();
+  const $$ = document.querySelectorAll.bind(document);
 
   const tabs = ["Everything", "Creative", "Art", "Design", "Branding"];
 
   const handleActiveTab = (e) => {
+    let myArray = Array.from($$(".Works_title-item__QYZ68"));
+    myArray.map((item) => {
+      item.classList.remove("Works_active__vHq5F");
+    });
+
     e.target.classList.add("Works_active__vHq5F");
   };
   const handleShowModal = () => {
@@ -28,7 +34,7 @@ function Works() {
       <div className={cx("container")}>
         <h2 className={cx("header")}>Recent works</h2>
         <ul ref={titleItemRef} className={cx("title-list")}>
-          {tabs.map((tab) => (
+          {tabs.map((tab, index) => (
             <li
               onClick={handleActiveTab}
               className={cx("title-item", { active: isActive })}>
